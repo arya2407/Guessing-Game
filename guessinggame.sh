@@ -12,10 +12,10 @@ function guess(){
         read  number
         if [ $number -lt $true_ans ]
         then
-            echo "Sorry. Your guess was too small - there are more files than that in this directory"
+            echo "Sorry. Your guess was too small - there are more files than that in this directory. Please try again."
         elif [ $number -gt $true_ans ]
         then
-            echo "Sorry. Your guess was too large - there are not that many files in this directory"
+            echo "Sorry. Your guess was too large - there are not that many files in this directory. Please try again."
         else
             echo " Congratulations! You correctly guessed the number of files in this directory - well done!"
         break;
