@@ -8,7 +8,7 @@ function guess(){
     true_ans=$(ls -l |grep "^-"|wc -l)
     while true;
     do
-        echo "please guess how many files are in the current directory, and type your answer here: "
+        echo "Please guess how many files are in the current directory, and type your answer here: "
         read  number
         if [ $number -lt $true_ans ]
         then
